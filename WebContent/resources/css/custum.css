@@ -1,0 +1,396 @@
+/*WIZARD*/
+.ui-wizard-content {
+	background: white;
+	padding: 10px;
+}
+
+.ui-wizard-step-titles>.ui-state-default {
+	border: none;
+	color: white;
+	font-weight: lighter;
+}
+
+.ui-wizard-navbar {
+	margin-top: 10px;
+}
+
+.ui-wizard-nav-next>.ui-button-text {
+	padding-left: 1em !important;
+	padding-right: 2.1em !important;
+}
+
+.ui-wizard-nav-next>.ui-button-icon-left {
+	right: .5em !important;
+	float: right;
+	left: auto;
+}
+
+.ui-wizard-step-separator {
+	margin-right: 10px !important;
+}
+
+.ui-wizard-step-number {
+	padding-left: 15px !important;
+	padding-right: 5px !important;
+}
+
+/*SURCHARGE WIZARD*/
+.ui-wizard-step-titles>.ui-state-highlight {
+	color: white !important;
+	border: none;
+	background: #0E7C31 !important;
+}
+
+.ui-wizard {
+	min-width: 700px !important;
+}
+
+.ui-wizard-content {
+	margin: 0 !important;
+}
+
+.ui-wizard-step-title {
+	padding: 10px !important;
+	margin: 0 !important;
+}
+
+.ui-wizard-step-titles>li {
+	position: relative !important;
+	border-top: 1px solid white !important;
+	border-left: 1px solid white !important;
+}
+
+.ui-wizard-step-title:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid #4e5a65;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 100%;
+	z-index: 2;
+}
+
+.ui-wizard-step-title:before {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 0;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid rgba(236, 236, 236, 0);
+	border-left: 22px solid #FFFFFF;
+	position: absolute;
+	top: 50%;
+	margin-top: -21px;
+	left: 100%;
+	z-index: 2;
+}
+
+.ui-wizard-step-titles {
+	background: white;
+}
+
+.ui-state-highlight:after {
+	border-left: 20px solid #0E7C31 !important;
+}
+
+.ui-wizard-navbar {
+	background: white;
+	margin: 0;
+	padding: 20px;
+}
+
+.ui-wizard-nav-back, .ui-wizard-nav-next {
+	width: 120px;
+}
+
+.ui-wizard  select, .ui-wizard  textarea, .ui-wizard  input, .ui-wizard  .uneditable-input
+	{
+	margin-bottom: 0 !important;
+}
+
+.ui-wizard-step-title {
+	background: #D4E7B0;
+	color: #000 !important;
+}
+
+.ui-wizard-step-title:after {
+	border-left: 20px solid #D4E7B0;
+}
+
+.ui-wizard-step-titles {
+	background: #c3c7c9;
+}
+
+.ui-wizard-step-titles  li:nth-last-child(1) {
+	border-right: 1px solid white !important;
+}
+
+.ui-wizard-step-titles  li:nth-last-child(1):after {
+	border: none !important;
+}
+
+.ui-wizard-step-titles li:nth-last-child(1):before {
+	border: none !important;
+}
+
+a {
+	color: #000;
+}
+
+.icon-over-tab, .icon-over-tab a {
+	font-size: 25px;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+
+.icon-over-tab a {
+	text-decoration: none;
+}
+
+.icon-over-tab span {
+	color: red;
+	background-color: #cacaca;
+	opacity: .35;
+}
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error
+	{
+	color: red;
+	border-color: red;
+}
+
+.ui-wizard-step-title {
+	padding-left: 25px !important;
+}
+
+.ui-wizard-step-titles {
+	background: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+	text-shadow: none;
+}
+
+body {
+	padding: 20px;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-size: cover;
+	background: url('#{request.contextPath}/resources/img/bgM.png');
+	background-color: beige;
+}
+
+.page-header {
+	border-bottom: 1px solid #BEA971;
+	margin: 20px 0 10px;
+}
+
+h1.page-header {
+	font-size: 30;
+	color: rgb(153, 119, 10);
+}
+
+.panel-heading {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.panelGrid {
+	border: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+table {
+	margin-bottom: 10px !important;
+}
+
+#page-wrapper {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	margin-bottom: 100px;
+	min-height: 500px;
+	padding: 10px;
+}
+
+.red {
+	color: red;
+}
+
+/**
+* MEGA - MENU 
+**/
+.sky-mega-menu li a {
+	/*display: inline-block; */
+	
+}
+
+.grid-container3 li a {
+	display: block;
+}
+
+.sky-mega-menu li, .grid-container3 li {
+	line-height: 35px;
+	font-size: 16px;
+}
+
+.sky-mega-menu li>div {
+	background: #fff;
+}
+
+.huge {
+	font-size: 40px;
+}
+
+.textDach {
+	font-size: 26px;
+}
+
+.jqte {
+	margin: 0px;
+}
+
+.couleur1 {
+	background-color: #cacaca !important;
+}
+
+.ui-picklist-source, .ui-picklist-target {
+	width: 300px !important;
+}
+
+.tab-without-border, .tab-without-border tr, .tab-without-border td {
+	border: hidden;
+	border-color: white;
+}
+
+.obligatoire:after {
+	content: " *";
+	color: red;
+}
+
+#userLoginTop {
+	border-radius: 35%;
+	color: green;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+		0 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+th {
+	border: 1px solid #c4cfa4 !important;
+	background: #e7e7e7 !important;
+	background-image: none !important;
+	font-weight: bold !important;
+}
+
+tfoot tr td {
+	border: 1px solid #666666 !important;
+	background: #ecf8eb !important;
+	font-weight: bold !important;
+	color: #295d8d !important;
+}
+
+/*SURCHARGE TABS */
+.ui-tabs .ui-tabs-nav .ui-state-default a {
+	font-weight: lighter !important;
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-default {
+	padding: 5px;
+	background: rgb(243, 243, 243);
+	border: 0;
+	border-left: 1px solid rgb(221, 221, 221);
+}
+
+.ui-tabs  .ui-widget-header {
+	background: rgb(243, 243, 243);
+	border: 0;
+	padding: 0 !important;
+}
+
+.ui-tabs  a {
+	color: #062f54 !important;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight,
+	.ui-widget-header .ui-state-highlight {
+	color: #000 !important;
+	background-color: #C5E2C4 !important;
+	background-image: none !important;
+}
+
+.ui-dialog.popup-sroll {
+	position: absolute !important;
+}
+
+#dashboard>div {
+	max-width: 300px;
+	min-height: 180px:
+}
+
+.red_aletre {
+	background: #ffaaaa !important;
+	color: #fff !important;
+}
+
+#stat-chauffeurs {
+	width: auto;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.legend {
+  margin: 10px 0;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 5px;
+  font-style: italic;
+}
+
+table.tab-stat-chauffeurs {
+	width: 1600px !important;
+	 max-width: 1600px !important;
+}
+
+.tab-stat-chauffeurs th{
+	text-align: center;
+}
+
+.tab-stat-chauffeurs thead {
+	line-height: 30px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.tab-stat-chauffeurs td {
+	border: 1px solid;
+	padding-right: 5px;
+	text-align: right;
+	height: 30px;
+	width: 150px;
+}
+
+.tab-stat-chauffeurs td.chauffeur {
+	border: 1px solid;
+	padding-left: 5px;
+	text-align: left;
+	line-height: 30px;
+	text-transform: capitalize;
+	width: 500px;
+}
+
+.ui-state-disabled {
+    color: black !important;
+    background-color: #eee !important;
+    opacity: 1 !important;
+}

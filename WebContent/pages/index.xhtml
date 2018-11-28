@@ -1,0 +1,70 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions" 
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/template/layout.xhtml">
+
+	<ui:define name="content">
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<p:commandButton actionListener="#{managerBean.listerEtudiant()}" value="Charger la liste" />
+				
+				<h:form>
+				<p:panelGrid columns="2">
+					<p:outputLabel value="Nom" />
+					<p:inputText value="#{managerBean.etudiant.nom}" />
+					
+					<p:outputLabel value="Prénom" />
+					<p:inputText value="#{managerBean.etudiant.prenom}" />
+					
+					<p:outputLabel value="Sexe" />
+					<p:inputText value="#{managerBean.etudiant.sexe}" />
+					
+					<p:outputLabel value="Année BAC" />
+					<p:inputText value="#{managerBean.etudiant.anneeBac}" />
+					
+					<p:outputLabel value="Année Inscription" />
+					<p:inputText value="#{managerBean.etudiant.anneeInscription}" />
+					
+					<p:outputLabel value="Numéro Inscription" />
+					<p:inputText value="#{managerBean.etudiant.numeroInscription}" />
+					
+					<p:outputLabel value="Lieu Naissance" />
+					<p:inputText value="#{managerBean.etudiant.lieuNaissance}" />
+					
+					<p:outputLabel value="Date Naissance" />
+					<p:calendar pattern="dd/MM/yyyy" value="#{managerBean.etudiant.dateNaissance}" />
+					
+					<p:outputLabel value="Niveau" />
+					<p:inputText value="#{managerBean.etudiant.niveau}" />
+					
+					<p:outputLabel value="Specialité" />
+					<p:inputText value="#{managerBean.etudiant.specialite}" />
+					
+					<p:outputLabel value="Nombre de copie" />
+					<p:inputText value="#{managerBean.nbCopie}" />
+					
+					<p:commandButton update="@form" actionListener="#{managerBean.enregistrerEtudiant()}" value="Enregistrer" />
+					
+				</p:panelGrid>
+				<p:dataTable value="#{managerBean.etudiants}" var="e" 
+				paginator="true" rows="10"
+					paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+					rowsPerPageTemplate="50,100,500" paginatorPosition="bottom"
+					currentPageReportTemplate=" ({startRecord} à {endRecord} de {totalRecords})"
+					emptyMessage="Aucun element trouvé" >
+					<p:column headerText="Nom">
+						#{e.nom}
+					</p:column>
+					
+					<p:column headerText="Prénom">
+						#{e.prenom}
+					</p:column>
+				</p:dataTable>
+				</h:form>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>
